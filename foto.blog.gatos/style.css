@@ -1,0 +1,300 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+:root{
+    font-size: 62.5%;
+    --color-base-blu-dark:#065E7C;
+    --color-base-blu:#387E96;
+    --color-base-wihte:#fff;
+    --color-base-black:#121214;
+    
+}
+
+body{
+
+    color: var(--color-base-black);
+   
+    font-size: 1.6rem;
+    
+
+
+}
+
+html,body,input,main{
+    font-family: 'Mulish', sans-serif;
+}
+
+#app{
+   
+    height: 100vh;
+    display: grid;
+    grid-template-rows: max-content 1fr 1fr max-content;
+
+
+}
+
+
+
+
+.conteinar{
+
+    background: var(--color-base-blu-dark);
+    padding: 0.75rem 1.75rem;
+    width: 100%;
+    
+    
+}
+
+
+
+header,nav{
+    display: flex;
+    align-items: center;
+    gap: 1.60rem;
+    
+    
+}
+
+
+
+.avatar{
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 50%;
+}
+
+.input-warpper input{
+    width: 100%;
+    padding: 1.6rem;
+    border-radius: 0rem;
+    opacity: 0.56;
+    border: 0;
+    border-radius: 0.23rem;
+    font-size: 1rem;
+    align-items: center;
+    
+    
+}
+
+.input-warpper::placeholder{
+    color: #3d3d3d;
+}
+
+.input-warpper label{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+
+    
+}
+
+
+
+ h1{
+    margin-left: 1.38rem;
+    margin-top: 1.94rem;
+
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    
+}
+
+main .icon{
+    margin-top: 0.5rem;
+    margin-left: 1.40rem;
+    display: flex;
+    gap: 0.80rem;
+
+}
+main .icon2 {
+    
+    background-color: var(--color-base-blu-dark);
+    padding:0.75rem;
+    border-radius: 63rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    
+}
+ 
+main .icon1{
+    
+    background-color: var(--color-base-blu-dark);
+    padding:0.75rem;
+    border-radius: 63rem;
+    width: 2.8rem;
+    height: 2.8rem;
+} 
+ main p{
+    width: 24rem;
+    margin-left: 1.40rem;
+    margin-top: 1.90rem;
+    font-size: 1.0rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    color: #121214;
+ }
+
+ /*lista de gatinhos*/
+
+
+.item{
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    gap: 1rem ; 
+    
+   
+    
+
+    
+
+}
+
+.item img{
+    margin-top: 2rem;
+   
+}
+
+.item h2{
+    
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.8rem; 
+    padding-bottom: 1rem;
+   
+}
+
+.item p {
+    font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.4rem;
+}
+
+.item p ,h2{
+    width: 12rem;
+    
+}
+
+/*footer*/
+
+footer{
+    
+    background-color: var(--color-base-blu);
+   
+    margin-top: 3rem;
+    height: 4rem;
+    padding-top: 1rem;
+
+
+
+}
+
+
+
+footer p{
+    color: #fff;
+    font-family: 'Mulish';
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-align: center;
+
+
+
+}
+
+/*midia queries*/
+
+@media(min-width:700px){
+
+    #app {
+
+        height: 100vh;
+
+        display: grid;
+        grid-template-areas: 
+        "A A " 
+        "B  C"
+        "D D"
+      
+      ;
+
+    
+      }
+
+      #app header{
+        grid-area: A;
+
+      }
+
+
+      #app main{
+        grid-area: B;
+
+      }
+
+      #app #siderba{
+        grid-area: C;
+
+      }
+
+      #app footer{
+        grid-area: D;
+
+      }
+
+      
+
+      header nav{
+        margin-left: 7rem;
+
+      }
+
+      .input-warpper input{
+        width: 67.6875rem;
+        padding: 0.75rem 1rem 0.75rem 0.875rem;
+        align-items: center;
+        gap: 0.75rem;
+   
+}
+
+  
+  main{
+    margin-left: 7rem;
+    margin-top: 2rem;
+  }
+
+  main .img img{
+    width: 60rem;
+height: 35rem;
+  }
+
+  main p{
+    font-size: 1.5rem;
+    width: 60rem;
+  }
+
+  main h1{
+    font-size: 2.0rem;
+  }
+
+  #siderba{
+    margin-right: 45em;
+  }
+
+  
+
+}
+
+
+
